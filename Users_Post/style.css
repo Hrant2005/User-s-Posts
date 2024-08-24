@@ -1,0 +1,122 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* User Profile styles */
+.user-profile {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.user-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.user-profile img:hover {
+    transform: scale(1.1);
+}
+
+.user-profile h2 {
+    display: inline-block;
+    margin: 0;
+    margin-left: 15px;
+    vertical-align: middle;
+    color: #333;
+}
+
+/* Post styles */
+.posts .post {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.posts .post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    max-height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.posts .post img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.post-details {
+    color: #555;
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-details span {
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.post-details span:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+.comments {
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 3px solid #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.posts .post:hover .comments {
+    max-height: 150px;
+}
+
+.comments p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.comments p strong {
+    color: #555;
+}
+
+.title {
+    font-style: italic;
+}
